@@ -1,4 +1,4 @@
 package myJavaPackag;
 
-public class gitBash {
+public class GitTest {
 }
