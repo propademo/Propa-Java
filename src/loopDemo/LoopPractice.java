@@ -141,11 +141,50 @@ static void loop2() {
             }
         }
     }
+//Take an int variable (say n = 5) and use a loop to print its multiplication table (5 × 1 … 5 × 10)
+public static void loop3() {
+
+    for (int i = 1; i <= 10; i++) {
+        System.out.println(i + " × " + i + " = " + (i * i));
+    }
+}
+//Write a program that checks between 1-20 if the number is divisible by 5.
+public static void loop4() {
+
+    for (int i = 1; i <= 20; i++) {
+        if (i % 5 == 0) {
+            System.out.println(i + " is divisible by 5");
+        }
+        else {
+            System.out.println(i + " is not divisible by 5");
+        }
+    }
+}
+
+//Write a program that checks between 1-20 if the number is divisible by 5 or 3 or 5&3.
+
+    public static void loop5() {
+        for (int i = 1; i <= 20; i++) {
+            if (i % 3 == 0 ) {
+                System.out.println(i + " is divisible by 3");
+            }
+            else if (i % 5 == 0) {
+                System.out.println(i + " is divisible by 5");
+            }
+            else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println(i + " is divisible by both 3 and 5");
+            }
+            else {
+                System.out.println(i + " is not divisible by 3 or 5");
+            }
+        }
+    }
+
 
     public static void main(String[] args) {
-       evenOdd2();
+       //evenOdd2();
         //whileloop();
-        //loop2();
+        loop5();
     }
 
 }
